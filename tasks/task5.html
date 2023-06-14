@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 5</h1>
+   <p>
+      Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+   </p>
+
+   <script>
+      //0. Робимо позначення
+      //numberSeconds - кількість секунд, які будуть введені користувачем
+      //numberMinutes - кількість хвилин, які ми отримаємо(переведені з numberSeconds)
+      //numberHours - кількість годин, які ми отримаємо(переведені з numberMinutes)
+      
+
+      //1. Вводимо необхідні дані
+      let numberSeconds = parseFloat(prompt('Вводимо кільксть секунд які пройшли від початку доби', '1'))
+
+      //2. Знаходимо результат
+      let numberMinutes = numberSeconds / 60
+      let numberHours = numberMinutes / 60
+
+      //3. Виводимо результат
+      document.write(`Від початку доби пройшло ${numberMinutes.toFixed(2)} хв. </br>`)
+      document.write(`Від початку доби пройшло ${numberHours.toFixed(2)} г.`)
+
+   </script>
+
+</body>
+</html>

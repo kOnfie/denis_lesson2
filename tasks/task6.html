@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 6</h1>
+   <p>
+      З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість 
+      кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+   </p>
+
+   <script>
+     //0. Робимо позначення
+     //numberOneProduct - кількість кілограм картоплі
+     //priceOneProduct - вартість одного кілограма картоплі
+     //totalOneProduct - загальна вартість картоплі
+
+     //numberTwoProduct - кількість кілограм яблук
+     //priceTwoProduct - вартість одного кілограма яблук
+     //totalTwoProduct - загальна вартість яблук
+
+     //numberThreeProduct - кількість кілограм моркви
+     //priceThreeProduct - вартість одного кілограма моркви
+     //totalThreeProduct - загальна вартість моркви
+
+   
+     //totalSumProducts - загальна вартість трьох товарів
+     
+     //1. Вводимо необхідні дані
+      let numberOneProduct = parseInt(prompt('Вводимо кількість кілограмів картоплі', "0"))
+      let priceOneProduct = parseFloat(prompt("Вводимо вартість одного кілограму картоплі", "1"))
+
+      let numberTwoProduct = parseInt(prompt('Вводимо кількість кілограм яблук', "0"))
+      let priceTwoProduct = parseFloat(prompt("Вводимо вартість одного кілограма яблук", "1"))
+
+      let numberThreeProduct = parseInt(prompt('Вводимо кількість кілограм моркви', "0"))
+      let priceThreeProduct = parseFloat(prompt("Вводимо вартість одного кілограма моркви", "1"))
+
+
+     //2. Знаходимо результати
+     let totalOneProduct = numberOneProduct * priceOneProduct
+     let totalTwoProduct = numberTwoProduct * priceTwoProduct
+     let totalThreeProduct = numberThreeProduct * priceThreeProduct
+
+     let totalSumProducts = totalOneProduct + totalTwoProduct + totalThreeProduct
+
+   //3. Виводимо результат
+     document.write(`Ціна за 1 кілограм картоплі: ${priceOneProduct} гривень. </br>
+     Кількість кілограмів картоплі: ${numberOneProduct} кг.</br>
+     Загальна ціна за ${numberOneProduct} кілограм картоплі: ${totalOneProduct} гривень. <br> <hr>`)
+
+     document.write(`Ціна за 1 кілограм яблук: ${priceTwoProduct} гривень. </br>
+     Кількість кілограмів яблук: ${numberTwoProduct} кг.</br>
+     Загальна ціна за ${numberTwoProduct} кілограм яблук: ${totalTwoProduct} гривень. <br> <hr>`)
+
+     document.write(`Ціна за 1 кілограм моркви: ${priceThreeProduct} гривень. </br>
+     Кількість кілограмів моркви: ${numberThreeProduct} кг.</br>
+     Загальна ціна за ${numberThreeProduct} кілограм моркви: ${totalThreeProduct} гривень. <br> <hr>`)
+
+     document.write(`Загальна вартість всіх продуктів становить: ${totalSumProducts} гривень.`)
+
+
+   </script>
+
+</body>
+</html>

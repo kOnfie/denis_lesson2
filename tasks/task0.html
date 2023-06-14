@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 0</h1>
+   <h4> S1=a+12+b</h4>
+   <h4> <img src="./img/Знімок екрана 2023-06-14 о 21.25.59.png" alt="#" width="100px"></h4>
+   <h4> <img src="./img/Знімок екрана 2023-06-14 о 21.26.10.png" alt="#" width="100px"></h4>
+   <h4> <img src="./img/Знімок екрана 2023-06-14 о 21.26.17.png" alt="#" width="100px"></h4>
+
+
+   <p>
+      Обчислити значення виразів 
+     
+      </p>
+
+   <script>
+
+      //1. Вводимо необхідні дані
+      let a = parseFloat(prompt('Вводимо число, яке буде дорівнювати а', "1"))
+      let b = parseFloat(prompt('Вводимо число, яке буде дорівнювати b', "1"))
+      let c = parseFloat(prompt('Вводимо число, яке буде дорівнювати c', "1"))
+
+      //2. Знахоидмо результати
+      let S1 = a + 12 + b
+      let S2 = Math.sqrt( (a + b) / 2 * a)
+      let S3 = Math.sqrt( (a + b) * c, 1 / 3 )
+      let S4 = Math.sin(a / (-b))
+
+      //3. Виводимо результати
+      document.write(`S1 =  ${S1.toFixed(2)} <br>`)
+      document.write(`S2 = ${S2.toFixed(2)} <br> `)
+      document.write(`S3 = ${S3.toFixed(2)} <br> `)
+      document.write(`S4 = ${S4.toFixed(2)}`)
+
+   </script>
+
+</body>
+</html>

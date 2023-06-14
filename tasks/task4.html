@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Задача 4</h1>
+   <p>
+      Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+   </p>
+
+   <script>
+      //0. Робимо позначення
+      //lengthInCentimeters - довжина басейну в сантиметрах
+      //lengthInMeter - довжина басейну в метрах
+      //lengthInKilometer - довжина басейну в метрах
+
+
+      //1. Вводимо необхідні дані
+      let lengthInCentimeters = parseFloat(prompt('Довжина басейну в сантиметрах', "1"))
+
+      //2. Знаходимо результат
+      let lengthInMeter = lengthInCentimeters / 100
+      let lengthInKilometer = lengthInMeter /  1000
+
+      //3. Виводимо результат
+      document.write(`Довжина басейну в метрах ${lengthInMeter} м. </br>`)
+      document.write(`Довжина басейну в кілометрах ${lengthInKilometer} км.`)
+
+   </script>
+
+</body>
+</html>
